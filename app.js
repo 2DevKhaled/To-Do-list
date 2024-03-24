@@ -20,7 +20,7 @@ submitRest.addEventListener('click' , function(){
 taskDiv.addEventListener("click", (e) => {
   if (
     e.target.classList.contains("delete") ||
-    e.target.classList.contains("ri-delete-bin-line")
+    e.target.classList.contains("ri-delete-bin-fill")
   ) {
     // remove element from page
     e.target.parentElement.remove();
@@ -57,7 +57,7 @@ function addElementToPageFrom(arr) {
     taskTitle.className = "taskTitle";
     div.appendChild(taskTitle);
     let del = document.createElement("i");
-    del.className = "ri-delete-bin-line";
+    del.className = "ri-delete-bin-fill";
     div.appendChild(del);
     taskDiv.appendChild(div);
   });
