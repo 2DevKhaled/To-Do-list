@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+body {
+  background-color: #fff;
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.logo span {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 600px;
+}
+.btn-rest{
+  width: 162px;
+  height: 49px;
+}
+.btn-rest button{
+  padding: 10px 10px;
+  border: none;
+  background-color: #0085FF;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.title {
+  color: #000000;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 45px;
+  font-weight: bold;
+}
+.title span {
+  color: #69b4ff;
+}
+.para {
+  color: #000;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  position: relative;
+}
+.para::after {
+  content: "";
+  position: absolute;
+  width: 800px;
+  right: 25%;
+  height: 0.5px;
+  background-color: #afafaf;
+  margin-top: 10px;
+}
+.container {
+  position: relative;
+}
+.form {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 70%);
+}
+.inputs {
+  display: flex;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  width: 650px;
+  height: 50px;
+}
+.input {
+  background-color: transparent;
+  border: none;
+  width: 530px;
+  padding: 20px;
+  outline: none;
+}
+.input::placeholder {
+  color: #00000087;
+}
+.input:focus {
+  border: red;
+}
+
+.add {
+  width: 105px;
+  height: 35px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0085ff;
+  border: none;
+  border-radius: 8px;
+  margin-top: 7.5px;
+}
+.task-area {
+  width: 900px;
+  height: 500px;
+  background-color: #ecf2f7;
+  margin: auto;
+  margin-top: 130px;
+  padding: 10px;
+  border-radius: 12px;
+}
+.task {
+  width: 850px;
+  height: 50px;
+  margin-top: 10px;
+  margin-right: 12.5px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px 0px 0px 8px;
+  position: relative;
+}
+.task::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  background-color: #0085ff;
+}
+.task .done .taskTitle p{
+  opacity: 0.5;
+  color: #0085ff;
+}
+.taskTitle {
+  color: #000;
+  font-size: 50px;
+  padding: 10px 30px;
+  font-size: 20px;
+  position: relative;
+}
+.btns {
+  display: flex;
+}
+i {
+  width: 35px;
+  height: 35px;
+  padding: 6px 15px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  margin-left: 20px;
+  color: #000000;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background-color: #e41717;
+  position: absolute;
+  right: 93%;
+}
