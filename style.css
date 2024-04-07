@@ -128,9 +128,18 @@ body {
   height: 50px;
   background-color: #0085ff;
 }
-.task .done .taskTitle p{
+.task.done .taskTitle{
   opacity: 0.5;
   color: #0085ff;
+}
+.task.done .taskTitle::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 1.5px;
+  margin-top: 15px;
+  margin-right: -115px;
+  background-color: #9c9c9c;
 }
 .taskTitle {
   color: #000;
@@ -138,6 +147,7 @@ body {
   padding: 10px 30px;
   font-size: 20px;
   position: relative;
+  transition: 0.5s ease;
 }
 .btns {
   display: flex;

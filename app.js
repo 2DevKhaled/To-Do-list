@@ -13,6 +13,13 @@ submit.addEventListener("click", function () {
     input.value == "";
   }
 });
+input.addEventListener("keydown", function (e) {
+  if (e.key === "Enter" && input.value !== "") {
+    addTaskToArray(input.value);
+    input.value == "";
+  }
+});
+
 submitRest.addEventListener('click' , function(){
   taskDiv.innerHTML = ""; 
   window.localStorage.removeItem("tasks");
